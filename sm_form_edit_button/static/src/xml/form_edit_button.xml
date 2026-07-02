@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-inherit="web.FormView" t-inherit-mode="extension">
+        <!-- Drive the whole form's read-only state from our flag -->
+        <xpath expr="//t[@t-component='props.Renderer'][@readonly]" position="attributes">
+            <attribute name="readonly">smFormReadonly</attribute>
+        </xpath>
+        <!-- Add the Edit button beside the New button (top-left) -->
+        <xpath expr="//t[@t-set-slot='control-panel-create-button']" position="inside">
+            <button t-if="smShowEditButton" type="button"
+                    class="btn btn-primary o_form_button_edit" data-hotkey="e"
+                    t-on-click.stop="smStartEdit">
+                <i class="fa fa-pencil me-1"/>Edit
+            </button>
+        </xpath>
+    </t>
+</templates>
