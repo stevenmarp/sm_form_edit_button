@@ -1,40 +1,40 @@
 <div class="container" style="font-family:Arial, Helvetica, sans-serif; color:#1f2937;">
     <section class="row flex-column p-4 bg-light shadow" style="margin-bottom:50px; border-radius:20px;">
         <div class="row flex-column mb-5 text-center">
-            <h3 style="color:#0E2D59; font-size:28px; font-family:system-ui; font-weight:700;">Form Edit Button</h3>
+            <h3 style="color:#0E2D59; font-size:28px; font-family:system-ui; font-weight:700;">Read-only Form with Edit Button</h3>
             <div class="col-lg-9 col-11 mx-auto mt-3" style="font-size:16px; color:#555;">
-                Odoo opens every form directly in edit mode, so a stray click or keystroke can change a
-                record without anyone noticing. This module brings back the classic behaviour: saved
-                records open read-only, and a clear Edit button unlocks the form only when you mean to
-                change it.
+                Records open locked so nobody changes data by accident. A clear Edit button unlocks the form only when the user really means to edit.
             </div>
         </div>
 
         <div class="row justify-content-center mb-5">
             <div class="col-md-10 col-11 text-center">
                 <div style="width:fit-content; margin:0 auto 14px; padding:4px 12px; color:#ffffff; background:#16a34a; border-radius:20px; font-size:12px; font-weight:700;">
-                    Key Features
+                    Safer Data Entry
                 </div>
+                <h2 style="font-size:36px; color:#0E2D59;" class="font-weight-bold mb-4">
+                    Bring Back The Classic Edit Workflow
+                </h2>
             </div>
         </div>
 
         <div class="row no-gutters justify-content-center mb-4 px-3">
             <div class="col-lg-4 col-md-6 col-12 p-2">
                 <div class="h-100 p-4 text-center bg-white shadow-sm" style="border-radius:8px;">
-                    <h4 style="color:#0E2D59; font-size:20px; font-weight:600;">Read-Only By Default</h4>
-                    <p style="font-size:14px; color:#555;">Every saved record opens locked, so nobody edits a field by accident.</p>
+                    <h4 style="color:#0E2D59; font-size:20px; font-weight:600;">Locked By Default</h4>
+                    <p style="font-size:14px; color:#555;">Every existing record opens read-only. No more accidental edits from a stray click or keystroke.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 p-2">
                 <div class="h-100 p-4 text-center bg-white shadow-sm" style="border-radius:8px;">
-                    <h4 style="color:#0E2D59; font-size:20px; font-weight:600;">One Clear Edit Button</h4>
-                    <p style="font-size:14px; color:#555;">A single Edit button unlocks the form. Save and Discard then behave exactly as before.</p>
+                    <h4 style="color:#0E2D59; font-size:20px; font-weight:600;">One-Click Edit</h4>
+                    <p style="font-size:14px; color:#555;">An Edit button sits in the form control panel. Click it to unlock the record; save or discard locks it back automatically.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 p-2">
                 <div class="h-100 p-4 text-center bg-white shadow-sm" style="border-radius:8px;">
-                    <h4 style="color:#0E2D59; font-size:20px; font-weight:600;">Works Everywhere</h4>
-                    <p style="font-size:14px; color:#555;">Applies to every form view in the backend. No configuration, no view changes, just install.</p>
+                    <h4 style="color:#0E2D59; font-size:20px; font-weight:600;">Zero Setup</h4>
+                    <p style="font-size:14px; color:#555;">Works on every backend form view out of the box. New records stay editable, so nothing slows down data entry.</p>
                 </div>
             </div>
         </div>
@@ -42,14 +42,27 @@
         <div class="row justify-content-center mt-2 px-3">
             <div class="col-lg-10 col-12">
                 <div class="p-4 bg-white shadow-sm" style="border-radius:8px; border-left:4px solid #16a34a;">
-                    <h4 style="color:#0E2D59; font-size:21px; font-weight:700; margin-bottom:12px;">How It Behaves</h4>
-                    <ul style="font-size:14px; line-height:1.9; color:#555; margin-bottom:0; padding-left:18px;">
-                        <li>Open a saved record: the form is read-only and shows an Edit button</li>
-                        <li>Click Edit: the form becomes editable and the Save / Discard controls appear</li>
-                        <li>Save or Discard: the form returns to read-only automatically</li>
-                        <li>Create a new record: it opens ready to fill in, no extra click needed</li>
-                    </ul>
+                    <h4 style="color:#0E2D59; font-size:21px; font-weight:700; margin-bottom:12px;">Native And Lightweight</h4>
+                    <p style="font-size:14px; line-height:1.8; color:#555; margin-bottom:0;">
+                        Built on the standard form view: it reuses Odoo's own read-only rendering, so every field, widget, and status bar keeps behaving exactly as designed - just locked until you choose to edit.
+                    </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row flex-column p-4 bg-light shadow" style="margin-bottom:50px; border-radius:20px;">
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-10 col-11 text-center">
+                <div style="width:fit-content; margin:0 auto 14px; padding:4px 12px; color:#ffffff; background:#16a34a; border-radius:20px; font-size:12px; font-weight:700;">
+                    See It In Action
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center px-3">
+            <div class="col-lg-11 col-12 text-center">
+                <img src="image.png" class="img-fluid shadow-sm" style="border-radius:8px; max-width:100%;" alt="An invoice form opened read-only with the Edit button in the control panel"/>
+                <p style="font-size:14px; color:#555; margin-top:12px;">Open any record and it stays locked: every field is read-only text, so a stray click or keystroke changes nothing. The Edit button sits right in the control panel next to New. Click it to unlock the form, make your changes, then Save or Discard to lock it back. New records skip the lock and open ready to fill in, so day-to-day data entry stays fast.</p>
             </div>
         </div>
     </section>

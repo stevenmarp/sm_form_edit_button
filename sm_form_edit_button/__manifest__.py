@@ -1,22 +1,23 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "Form Edit Button",
+    "name": "Read-only Form with Edit Button",
     "version": "18.0.1.0.0",
-    "category": "Tools",
-    "summary": "Open records read-only and add a classic Edit button, so nobody changes "
-               "a record by accident",
+    "category": "Web",
+    "summary": "Open records read-only and require an Edit click before changing anything",
     "description": """
-Form Edit Button
-================
+Read-only Form with Edit Button
+===============================
 
-Odoo opens every form directly in edit mode, which makes accidental changes
-easy. This module brings back the classic behaviour:
+Bring back the classic form workflow: records open locked (read-only) and users
+must click an Edit button before they can change anything. Prevents accidental
+edits from a single misclick.
 
-* Saved records open read-only
-* A clear Edit button unlocks the form when you really want to change it
-* Save and Discard work exactly as before
-* New records still open ready to fill in
-* Works on every form view, no configuration
+* Existing records open in read-only mode
+* An Edit button appears in the form control panel
+* Click Edit to unlock the form for changes
+* Saving or discarding locks the form again
+* New records stay editable so you can fill them in right away
+* No per-model setup, works on every form view
     """,
     "author": "Steven Marp",
     "website": "https://apps.odoo.com/apps/modules/browse?author=Steven Marp",
@@ -27,9 +28,10 @@ easy. This module brings back the classic behaviour:
             "sm_form_edit_button/static/src/form_edit_button/*",
         ],
     },
+    "images": ["static/description/banner.gif"],
     "installable": True,
     "application": False,
     "auto_install": False,
-    "price": 15.00,
+    "price": 5.90,
     "currency": "USD",
 }
