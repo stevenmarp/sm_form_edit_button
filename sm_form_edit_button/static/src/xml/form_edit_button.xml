@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-inherit="web.FormView" t-inherit-mode="extension">
+        <!-- Edit button beside the New button (top-left). -->
+        <xpath expr="(//t[@t-set-slot='control-panel-create-button'])[1]" position="inside">
+            <button t-if="smCanShowEdit" type="button"
+                    class="btn btn-primary o_form_button_edit" data-hotkey="e"
+                    t-on-click.stop="smEnableEdit">
+                <i class="fa fa-pencil me-1"/>Edit
+            </button>
+        </xpath>
+        <xpath expr="(//t[@t-set-slot='control-panel-create-button'])[2]" position="inside">
+            <button t-if="smCanShowEdit" type="button"
+                    class="btn btn-primary o_form_button_edit" data-hotkey="e"
+                    t-on-click.stop="smEnableEdit">
+                <i class="fa fa-pencil me-1"/>Edit
+            </button>
+        </xpath>
+    </t>
+</templates>

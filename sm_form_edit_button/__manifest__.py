@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Read-only Form with Edit Button",
-    "version": "18.0.1.0.0",
+    "version": "17.0.1.0.0",
     "category": "Web",
     "summary": "Open records read-only and require an Edit click before changing anything",
     "description": """
@@ -25,7 +25,8 @@ edits from a single misclick.
     "depends": ["web"],
     "assets": {
         "web.assets_backend": [
-            "sm_form_edit_button/static/src/form_edit_button/*",
+            "sm_form_edit_button/static/src/js/form_edit_button.js",
+            "sm_form_edit_button/static/src/xml/form_edit_button.xml",
         ],
     },
     "images": ["static/description/banner.gif"],
