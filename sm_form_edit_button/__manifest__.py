@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Read-only Form with Edit Button",
-    "version": "17.0.1.0.0",
+    "version": "16.0.1.0.0",
     "category": "Web",
     "summary": "Open records read-only and require an Edit click before changing anything",
     "description": """

@@ -4,7 +4,7 @@ import { patch } from "@web/core/utils/patch";
 import { FormController } from "@web/views/form/form_controller";
 import { useEffect } from "@odoo/owl";
 
-console.log("sm_form_edit_button: JS Loaded for Odoo 17");
+console.log("sm_form_edit_button: JS Loaded for Odoo 16");
 
 patch(FormController.prototype, {
     setup() {
