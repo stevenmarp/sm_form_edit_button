@@ -6,7 +6,7 @@ import { useEffect } from "@odoo/owl";
 
 console.log("sm_form_edit_button: JS Loaded for Odoo 16");
 
-patch(FormController.prototype, {
+patch(FormController.prototype, "sm_form_edit_button.FormControllerPatch", {
     setup() {
         super.setup(...arguments);
         
