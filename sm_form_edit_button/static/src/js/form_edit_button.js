@@ -8,7 +8,7 @@ console.log("sm_form_edit_button: JS Loaded for Odoo 16");
 
 patch(FormController.prototype, "sm_form_edit_button.FormControllerPatch", {
     setup() {
-        super.setup(...arguments);
+        this._super(...arguments);
         
         // Track whether the user explicitly unlocked editing for the current record
         this.smUserEditing = false;
@@ -27,7 +27,7 @@ patch(FormController.prototype, "sm_form_edit_button.FormControllerPatch", {
         );
     },
 
-    get smCanShowEdit() {
+    smCanShowEdit() {
         const root = this.model.root;
         const res = (
             !this.props.readonly &&
@@ -48,7 +48,7 @@ patch(FormController.prototype, "sm_form_edit_button.FormControllerPatch", {
     async discard() {
         console.log("sm_form_edit_button: discard clicked");
         this.smUserEditing = false;
-        await super.discard(...arguments);
+        await this._super(...arguments);
         if (this.model.root.resId) {
             await this.model.root.switchMode("readonly");
         }
@@ -56,7 +56,7 @@ patch(FormController.prototype, "sm_form_edit_button.FormControllerPatch", {
 
     async saveButtonClicked() {
         console.log("sm_form_edit_button: saveButtonClicked clicked");
-        const saved = await super.saveButtonClicked(...arguments);
+        const saved = await this._super(...arguments);
         if (saved) {
             this.smUserEditing = false;
             if (this.model.root.resId) {
